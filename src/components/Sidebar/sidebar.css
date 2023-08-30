@@ -1,0 +1,46 @@
+.sidebar{
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: #11101d;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+.sidebar h5{
+    color: rgb(239, 148, 148);
+    font-size: 1.2rem;
+}
+.homepage-icons{
+    margin-left: 20px;
+}
+.top-left, .your-music, .your-playlists{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.top-left-fields, .top-center-fields{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border: none;
+    transition: all 0.5s ease;
+}
+.top-left-fields p, .top-center-fields p{
+    margin-left: 10px;
+}
+.top-left-fields:hover,
+.top-center-fields:hover{
+    cursor: pointer;
+    color: var(--accent);
+    border-left: 1px solid var(--accent);
+    border-left-width: 1cm;
+    transition: all 0.5s ease;
+   
+}
+.create-playlist{
+    display: flex;
+}
+.create-playlist h4{
+    margin-left: 20px;
+}

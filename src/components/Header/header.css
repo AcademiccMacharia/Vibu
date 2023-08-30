@@ -1,0 +1,92 @@
+.header {
+  height: 10%;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Quicksand", sans-serif;
+}
+.header img {
+  width: 5%;
+  height: 50%;
+  margin-left: 20px;
+}
+/* .header h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-left: 20px;
+    font-family: 'Sedgwick Ave Display', cursive;
+} */
+
+.header .search {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(139, 133, 133);
+}
+.header .search input {
+  width: 100%;
+  height: 80%;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: inherit;
+  color: var(--text-light);
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  margin-right: 20px;
+}
+.nav-right button {
+  width: 150px;
+  height: 80%;
+  border: 1px solid var(--accent);
+  padding: 6px 8px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: inherit;
+  border-radius: 20px;
+  color: var(--accent);
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.nav-right button:hover{
+  background: var(--accent);
+  color: var(--text-light);
+  transition: all 0.4s ease;
+  .right-arrow{
+    transform: rotate(90deg);
+    transition: all 0.4s ease;
+  }
+}
+.right-arrow {
+  margin-top: 5px;
+}
+.nav-right-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-right-img img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.nav-right-img img:hover{
+  cursor: pointer;
+  transition: all 0.4s ease; 
+}

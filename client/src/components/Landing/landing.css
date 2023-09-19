@@ -2,12 +2,22 @@
 .landing{
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.landing-hero p, .about p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+.landing section{
+    height: 100%;
+    width: 100%;
     background-image: url("/src/assets/musicy.jpg");
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1;
 }
 .overlay{
     position: absolute;
@@ -16,6 +26,7 @@
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.6);
+    z-index: -1;
   }
   .links{
     text-decoration: none;
@@ -75,7 +86,7 @@
     z-index: 1;
 }
 .landing-hero-left{
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -130,4 +141,131 @@
     color: var(--accent);
     border: 1px solid var(--accent);
     transition: all 0.4s ease;
+}
+
+.about{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.about-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-header h2{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Macondo", cursive !important;
+    letter-spacing: 0.2cm;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+.about-header p{
+    padding: 10px;
+    border-bottom: 1px solid var(--accent);
+}
+.about-body{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+.about-body-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-body-left p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    line-height: 1cm;
+}
+.about-body-left h5{
+    width: 10%;
+    margin-bottom: 20px;
+}
+.about-body-left img{
+    width: 80px;
+    height: 30px;
+    display: flex;
+}
+.about-body-right img{
+    width: 550px;
+    height: 450px;
+}
+.about-body-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature{
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #000 !important;
+}
+.feature-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.feature-header h2{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Macondo", cursive !important;
+    letter-spacing: 0.2cm;
+    color: var(--text-dark);
+    margin-top: 50px;
+}
+.feature p{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.feature-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+.feature-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #292727;
+    color: var(--text-light);
+    border-radius: 12px;
+    padding: 20px;
+}
+.feature-card h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.feature-card img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
 }

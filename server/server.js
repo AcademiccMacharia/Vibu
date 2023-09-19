@@ -11,8 +11,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const clientId = '5a3eef6e2cae46408817e1d22db89871';
-const clientSecret = 'a182f5b75fd84105a4736fcf6b94c982';
+const clientId = '';
+const clientSecret = '';
 const redirectUri = 'http://localhost:3000/vibu';
 
 const codeVerifier = crypto.randomBytes(64).toString('hex');

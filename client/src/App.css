@@ -4,12 +4,14 @@
     --background-container: #292727;
     --text-light: #FAF4F4;
     --accent: #d3880f;
+    --acc: linear-gradient(to bottom, #d3880f, #e6a057, #f6c190, #ffe2be);
+
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
 }
 body {
     background: var(--background);

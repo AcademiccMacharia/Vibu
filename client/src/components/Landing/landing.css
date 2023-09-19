@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@400;500;700&family=Macondo&display=swap');
+.landing{
+    height: 100%;
+    width: 100%;
+    background-image: url("/src/assets/musicy.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+  }
+  .links{
+    text-decoration: none;
+    color: var(--text-light);
+  }
+.landing-header{
+    height: 15%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.landing-header-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.landing-header img{
+    width: 5%;
+    height: 50%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+.landing-header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    margin-right: 5%;
+}
+.landing-header-right ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 5%;
+}
+.landing-header-right ul li{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.landing-header-right ul li:hover{
+    color: var(--accent);
+}
+.landing-hero{
+    width: 100%;
+    height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    z-index: 1;
+}
+.landing-hero-left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.landing-hero h1{
+    width: 100%;
+    font-size: 10rem;
+    font-weight: 700;
+    font-family: "Macondo", cursive !important;
+    letter-spacing: 0.4cm;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+.landing-hero-left span{
+    width: 40%;
+
+}
+.landing-hero-left img{
+    width: 50px;
+    height: 50px;
+
+}
+.landing-hero-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.landing-hero-right p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1cm;
+}
+.landing-hero-right button{
+    width: 40%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: var(--accent);
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.landing-hero-right button:hover{
+    background-color: var(--text-dark);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    transition: all 0.4s ease;
+}

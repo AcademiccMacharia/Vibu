@@ -1,0 +1,159 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21%;
+  width: 78%;
+  height: 88vh;
+}
+.top-artists {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.top-artists-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.top-artists-left {
+  display: flex;
+  align-items: center;
+  height: 10%;
+}
+.top-artists-left p {
+  margin-left: 20px;
+}
+.top-artists-right {
+  display: flex;
+  align-items: center;
+  height: 10%;
+}
+.top-artists-right .icons {
+  margin-left: 20px;
+}
+.artists-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 90%;
+  gap: 10px;
+}
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  border-radius: 20px;
+}
+.artist-card:hover {
+  cursor: pointer;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+}
+.artist-card img {
+  width: 300px;
+  height: 320px;
+  border-radius: 20px;
+}
+.artist-card h3 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.artist-card p {
+  margin-left: 10px;
+}
+.player-container {
+  margin-top: 10px;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+.most-played-cards {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 300px;
+  overflow-y: scroll;
+}
+.most-played-cards::-webkit-scrollbar {
+  width: 0.1em;
+  background-color: transparent;
+}
+
+.most-played-cards::-webkit-scrollbar-thumb {
+  background-color: gold;
+}
+.most-played-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #292727;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+.most-played-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+}
+.most-played-card-left {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-around;
+}
+.most-played-card-right {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-around;
+}
+.now-playing {
+  background-color: rgb(29, 29, 28);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.now-playing-header h4 {
+  margin: 20px 0 0 20px;
+}
+.now-playing-body {
+  display: flex;
+  align-items: center;
+}
+.now-playing-body p {
+  display: flex;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+.spot-player img {
+  width: 140px;
+  height: 150px;
+  padding: 20px;
+}
+.spot-player p a {
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+.spot-player img:hover {
+  cursor: pointer;
+  transform: translateY(10px);
+  transition: all 0.5s ease;
+}
